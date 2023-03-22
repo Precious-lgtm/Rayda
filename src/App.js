@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { Container } from '@mui/material';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import { MainContainer } from './features/styles/Styles';
@@ -21,7 +20,6 @@ function App() {
         </MainContainer>
       </ApiProvider>
     </Provider>
-    
   );
 }
 

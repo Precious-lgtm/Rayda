@@ -6,8 +6,8 @@ import '../../App.css';
 import '../../fonts/IBMPlexSans-Regular.ttf';
 
 /**
- * This container (MainContainer) wraps the entire
- * application. You'll find it in the App.js file.
+ * This FILE contains styled components used throughout the application
+ * application.
  */
 export const MainContainer = styled('div')({
     width: "auto",
@@ -36,7 +36,7 @@ export const BoxContainer = styled('div')({
     flexDirection: 'row',
     justifyContent: "space-between",
     alignItems: "center",
-    boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 2.6px 1.95px"
+    boxShadow: "rgba(0, 0, 0, 0.15) -1.95px 2.6px 1.95px"
 });
 
 export const BannerContainer = styled('div')({
@@ -98,6 +98,15 @@ export const LogoContainer = styled('div')({
     backgroundPosition: "center",
 });
 
+export const LogoTexts = styled('div')({
+    width: "50vw",
+    height: "auto",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-start",
+    alignItems: "flex-start"
+});
+
 export const Label = styled('label')({
     fontFamily: "bold",
     fontSize: 20,
@@ -128,6 +137,7 @@ export const ButtonText = styled('label')({
     flexDirection: "row",
     justifyContent: "space-around",
     alignItems: "center",
+    marginTop: '-1vh',
     boxShadow: "rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px",
 });
 

@@ -1,12 +1,24 @@
-import { Button, Box } from '@mui/material';
 import * as React from 'react';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useGetAllProductsQuery } from '../features/apiSlice';
-import { ButtonText, Label, ProductButton, ProductContainer, ProductDetails, ProductHeader, ProductImage, ProductIntro, ProductItem } from '../features/styles/Styles';
+import { 
+    ButtonText, 
+    Label, 
+    ProductButton, 
+    ProductContainer, 
+    ProductDetails, 
+    ProductHeader, 
+    ProductImage, 
+    ProductIntro, 
+    ProductItem 
+} from '../features/styles/Styles';
 import { getFirstLetters, truncate } from '../features/functions';
 
 const Products = () => {
+    // The data for the products retrieved from the store
     const { data, error, isLoading } = useGetAllProductsQuery();  
+    
+    //These Images were added because those enlisted in the API were inaccessible
     const [productImages, setProductImages] = useState([
         {id: 1, name: "one", img: 'ImageLaptop.png'},
         {id: 2, name: "two", img: 'ImagePhone.png'},
@@ -17,7 +29,6 @@ const Products = () => {
         {id: 7, name: "seven", img: 'ImageMac.png'},
         {id: 8, name: "eight", img: 'ImageMac1.png'}
     ]);
-
     return (
         <ProductContainer>
             <ProductHeader>
@@ -43,7 +54,7 @@ const Products = () => {
                         <ProductIntro>
                             <label style = {{ padding: "5px", fontSize: 11, borderRadius: "50%", backgroundColor: "#f1f1f1", marginLeft: "1vh" }}>{getFirstLetters(product.name)}</label>
                             <label style = {{ fontSize: 13, fontWeight: "bold", marginLeft: "2vh" }}>{product.name}</label>
-                            <label style = {{ fontSize: 12, fontWeight: "normal", color: "#f0f0f0", marginLeft: "2vh" }}>(Highest Bidder)</label>
+                            <label style = {{ fontSize: 12, fontWeight: "normal", color: "gray", marginLeft: "2vh" }}>(Highest Bidder)</label>
                         </ProductIntro>
                         <ProductDetails>
                             <label style = {{ fontSize: 14, fontWeight: "bold", marginLeft: "1vh" }}>{truncate(product.title)}</label>
