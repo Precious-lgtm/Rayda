@@ -21,13 +21,14 @@ const Products = () => {
     //These Images were added because those enlisted in the API were inaccessible
     const [productImages, setProductImages] = useState([
         {id: 1, name: "one", img: 'ImageLaptop.png'},
-        {id: 2, name: "two", img: 'ImagePhone.png'},
-        {id: 3, name: "three", img: 'ImageDesktop.png'},
-        {id: 4, name: "four", img: 'ImageDesktop1.png'},
-        {id: 5, name: "five", img: 'ImageLaptop1.png'},
-        {id: 6, name: "six", img: 'ImageSamsung.png'},
+        {id: 2, name: "eight", img: 'ImageMac1.png'},
+        {id: 3, name: "five", img: 'ImageLaptop1.png'},
+        {id: 4, name: "six", img: 'ImageSamsung.png'},
+        {id: 5, name: "three", img: 'ImageDesktop.png'},
+        {id: 6, name: "four", img: 'ImageDesktop1.png'},
         {id: 7, name: "seven", img: 'ImageMac.png'},
-        {id: 8, name: "eight", img: 'ImageMac1.png'}
+        {id: 8, name: "two", img: 'ImagePhone.png'},
+        
     ]);
     return (
         <ProductContainer>
