@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+import * as React from 'react';
+import { Container } from '@mui/material';
+import Header from './components/Header';
+import Banner from './components/Banner';
+import { MainContainer } from './features/styles/Styles';
+import Products from './components/Products';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+import { ApiProvider } from '@reduxjs/toolkit/query/react';
+import { productApi } from './features/apiSlice';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store = {store}>
+      <ApiProvider api = {productApi}>
+        <MainContainer>
+          <Header />
+          <Banner />
+          <Products />
+        </MainContainer>
+      </ApiProvider>
+    </Provider>
+    
   );
 }
 

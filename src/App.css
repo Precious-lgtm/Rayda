@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Light";   /*Can be any text*/
+    src: local("IBMPlexSans-Light"),
+      url("./fonts/IBMPlexSans-Light.ttf") format("truetype");
+  }
+
+@font-face {
+font-family: "Regular";   /*Can be any text*/
+src: local("IBMPlexSans-Regular"),
+    url("./fonts/IBMPlexSans-Regular.ttf") format("truetype");
+}
+
+
+@font-face {
+font-family: "Medium";   /*Can be any text*/
+src: local("IBMPlexSans-Medium"),
+    url("./fonts/IBMPlexSans-Medium.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "Bold";   /*Can be any text*/
+src: local("IBMPlexSans-Bold"),
+    url("./fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+font-family: "SemiBold";   /*Can be any text*/
+src: local("IBMPlexSans-SemiBold"),
+    url("./fonts/IBMPlexSans-SemiBold.ttf") format("truetype");
+}
