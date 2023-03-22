@@ -2,6 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# How to Run the Rayda Application
+
+The main branch of this application is the Master Branch,
+To Download (or Clone) this application to your local computer, click on the `Code` button on Github and select either of the 
+HTTPS, SSH or Github CLI options.
+
+For HTTPS,
+1. Copy the URL given (usually ends with .git).
+2. Open `Git Bash` on your computer (To run Git-Bash, you'll need to install Git - see https://git-scm.com/book/en/v2/Getting-Started-Installing-Git for more instructions).
+3. In your `Git Bash` terminal, change the current directory to the location where your want the application to be cloned. 
+4. Type in `git clone` paste the URL you copied earlier (See Step 1) - the application will be downloaded to your local computer.
+5. Open the project in a Code Editor (I recommend VS Code) and open a new Terminal.
+6. Type in `npm install` and press the `ENTER` key. It will install all the dependencies needed to run the application.
+7. After Installation, on the terminal, type `npm start` and press "ENTER". The application should be launched on your browser.
+
+For SSH,
+Use the Instructions on this website https://www.theserverside.com/blog/Coffee-Talk-Java-News-Stories-and-Opinions/github-clone-with-ssh-keys
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -44,27 +62,3 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
