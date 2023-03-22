@@ -112,7 +112,7 @@ export const Snippet = styled('li')({
     fontSize: 16,
     padding: "1vh",
     borderRadius: "5px",
-    marginRight: 10
+    marginRight: 10,
 });
 
 export const ButtonText = styled('label')({
@@ -157,13 +157,13 @@ export const ProductHeader = styled('div')({
 })
 
 export const ProductItem = styled('div')({
-    width: "22.5%",
+    width: "21.6%",
     minHeight: "15vh",
     backgroundColor: "white",
     borderRadius: "5px",
     marginTop: "4vh",
     marginBottom: "10px",
-    padding: "6px",
+    padding: "10px",
     display: "flex",
     flexDirection: 'column',
     flexWrap: 'wrap',
@@ -213,4 +213,36 @@ export const ProductButton = styled('button')({
     border: "none",
     borderRadius: "6px",
     marginTop: "2vh"
+});
+
+export const NotifLabel = styled('label')({
+    backgroundColor: "red",
+    color: "white",
+    borderRadius: "50%",
+    width: "1.5vw",
+    height: "1.5vw",
+    fontSize: 11,
+    marginLeft: "-2vw",
+    marginTop: "1vw",
+    zIndex: 300
+});
+
+export const WelcomeLabel = styled('label')({
+    lineHeight: "38px",
+    fontWeight: "600",
+    fontSize: "30px"
+});
+
+export const FootNote = styled('label')({
+    lineHeight: "24px",
+    fontWeight: "400",
+    fontSize: "16px"
+});
+
+export const IntroContainer = styled('div')({
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "space-around",
+    alignItems: "flex-start",
+    marginLeft: "10px"
 });

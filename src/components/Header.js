@@ -1,37 +1,21 @@
 import * as React from "react";
 import { Box, Button } from "@mui/material";
-import { AddAlarm } from "@mui/icons-material";
-import { BoxContainer } from "../features/styles/Styles";
+import { AddAlarm, Notifications, NotificationsNone } from "@mui/icons-material";
+import { BoxContainer, FootNote, IntroContainer, NotifLabel, WelcomeLabel } from "../features/styles/Styles";
 
 function Header() {
     return (
         <BoxContainer>
-            <Box sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "space-around",
-                alignItems: "flex-start",
-                marginLeft: "10px"
-            }}>
-                <label style = {{
-                    lineHeight: "38px",
-                    fontWeight: "600",
-                    fontSize: "30px"
-                }}>Welcome</label>
-                <label style = {{
-                    lineHeight: "24px",
-                    fontWeight: "400",
-                    fontSize: "16px"
-                }}>Your current sales auction and activity</label>
-            </Box>
+            <IntroContainer>
+                <WelcomeLabel>Welcome</WelcomeLabel>
+                <FootNote >
+                    Your current sales auction and activity.
+                </FootNote>
+            </IntroContainer>
             <Box>
                 <Button>
-                    <AddAlarm />
-                    <label style = {{
-                        backgroundColor: "red",
-                        color: "white",
-                        borderRadius: "50%",
-                    }}>2</label>
+                    <NotificationsNone sx = {{width: "4.5vw", fill: "black", height: "4.5vh", zIndex: 100}} />
+                    <NotifLabel>2</NotifLabel>
                 </Button>
             </Box>
         </BoxContainer>
